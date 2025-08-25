@@ -9,7 +9,6 @@
   --card: #ffffff;
   --purple: #3f2a9e;
   --purple-2: #4b36c1;
-
   --container: 1140px;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0,0,0,.08);
@@ -55,10 +54,7 @@ body{
 .hero { padding-top: 80px; padding-right: 40px; padding-left: 40px; gap: 24px;background:#efeefe;text-align: center;color: #3B3092;}
 .hero-inner { display: flex;flex-direction: column; align-items: center; justify-content: center; gap: 1rem; }
 .hero-copy h1 { font-family: Catamaran; font-size: 56px; line-height: 120px; margin: 0;font-weight: 300; }
-.hero-copy p {
-  font-family: 'Inter';
-  font-size: 18px;
-  font-weight: 400;     
+.hero-copy p { font-family: 'Inter'; font-size: 18px; font-weight: 400;     
   font-style: normal;
   line-height: 31px;
   letter-spacing: 0;
@@ -75,30 +71,13 @@ body{
 
 
 /* Clients */
-.clients {
-  padding-top: 32px;
-  padding-right: 40px;
-  padding-bottom: 32px;
-  padding-left: 40px;
-  gap: 24px;
-  height: hug(133px);
-  border-top: 1px;
-  background: #fafaff; /* light background */
-  overflow-x: auto;    /* allows horizontal scroll on small screens */
-}
-
-.logo-row {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;   /* prevents logos from wrapping to next line */
-}
+.clients { padding-top: 32px; padding-right: 40px; padding-bottom: 32px; padding-left: 40px; gap: 24px; height: hug(133px); border-top: 1px; background: #fafaff; overflow-x: auto; }
+.logo-row { display: flex; gap: 2rem; align-items: center; justify-content: center; flex-wrap: nowrap; }
 
 .logo-row img {
-  height: 69px;        /* fix logo height */
+  height: 69px;     
   width: 110px;
-  object-fit: contain; /* keep aspect ratio */
+  object-fit: contain;
   opacity: 0.8;
   transition: all 0.3s ease;
 }
@@ -132,21 +111,21 @@ body{
 .service.card {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* ensures button stays at bottom */
+  justify-content: center; 
   padding: 20px;
   border-radius: 12px;
   background: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  min-height: 400px; /* all cards same height */
+  min-height: 400px;
   text-align: center;
 }
 
 .service-thumb {
   width: 347px;
   height: 203px;
-  object-fit: cover;   /* keeps image aspect ratio and crops if needed */
-  margin: 0 auto 15px; /* center image */
-  border-radius: 8px;  /* optional for rounded corners */
+  object-fit: cover;   
+  margin: 0 auto 15px; 
+  border-radius: 8px;  
   display: block;
 }
 
@@ -165,7 +144,7 @@ body{
   font-family: Inter;
   font-weight: 400;
   font-style: regular;
-  flex-grow: 1; /* pushes button down */
+  flex-grow: 1; 
   font-size: 14px;
   color: #00000066;
   margin-bottom: 20px;
@@ -179,12 +158,12 @@ body{
   padding-right: 16px;
   padding-bottom: 12px;
   gap: 10px;
-  background-color: #3B3092; /* deep purple background */
-  color: #fff;               /* white text */
+  background-color: #3B3092; 
+  color: #fff;               
   font-size: 1rem;
   font-weight: 500;
-  border-bottom: 1px;              /* no border */
-  border-radius: 8px;        /* rounded corners */
+  border-bottom: 1px;              
+  border-radius: 8px;        
   cursor: pointer;
   text-align: left;
   margin: left(16px);
@@ -196,18 +175,8 @@ body{
 }
 
 /* ===== CASE STUDIES SECTION ===== */
-.case-studies {
-  background: var(--purple);
-  color: #FFFFFF;
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.case-studies .section-title {
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-  color: #FFFFFF;
-}
+.case-studies { background: var(--purple); color: #FFFFFF; padding: 4rem 0; text-align: center;}
+.case-studies .section-title { font-size: 2rem; margin-bottom: 2.5rem; color: #FFFFFF; }
 
 /* Grid for case studies */
 .case-grid {
@@ -295,7 +264,7 @@ body{
 
 .section-title {
   font-size: 2rem;
-  color: #4a3fb3; /* purple shade */
+  color: #4a3fb3;
   margin-bottom: 2rem;
 }
 
@@ -328,7 +297,7 @@ body{
 .testimonial-author {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers image + text horizontally */
+  align-items: center; 
   justify-content: center;
   text-align: center;
 }
@@ -390,6 +359,8 @@ body{
 .faq p{ color:#e8e9ff; margin:.5rem 0 0; }
 .faq h2{ color: #FFFFFF; font-family: Catamaran; }
 .faq h4{font-family: Inter; font-weight: 400; font-style: Regular; font-size: 14px;text-align: center; color: #FCAF17; padding: 0px; margin: 0px;} 
+
+
 /* CTA */
 .cta{ background:#fff; padding:2.5rem 0; }
 .cta-inner{ background:#f7f7ff; border-radius:var(--radius); padding:2rem; display:grid; grid-template-columns:1.3fr 1fr; align-items:center; gap:1rem; position:relative; overflow:hidden; }
@@ -398,11 +369,9 @@ body{
   width: 380.79998779296875px;
   height: 50px;
   display: block;
-  border-radius: 12px; /* optional for rounded edges */
-  justify-self: center; /* keeps it centered in grid cell */
+  border-radius: 12px; 
+  justify-self: center; /
 }
-
-
 
 
 /* Footer */
